@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Programas para os RPG's</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById("btn1").onclick = function() {
+                var frase = '';
+                document.getElementById("result").innerHTML = frase;
+                frase = prompt("Digite a frase:");
+                var casaselecionada = '';
+                var qualcasa = document.getElementsByName("casas");
+                for (var i = 0; i < qualcasa.length; i++) {
+                    if (qualcasa[i].checked) {
+                        document.getElementById("minhacasa").innerHTML = qualcasa[i].value;
+                    }
+                }
+                document.getElementById("result").innerHTML = frase + '</br>';
+                for (var i = 0; i < 103; i++) {
+                    frase = frase.substring(0, (frase.length - 1));
+                    i++;
+                    document.getElementById("result").innerHTML += frase.trim() + '</br>';
+                }
+            }
+
+            document.getElementById("btn2").onclick = function() {
+                var frase = '';
+                document.getElementById("result").innerHTML = frase;
+                frase = prompt("Digite a frase");
+                var casaselecionada = '';
+                var qualcasa = document.getElementsByName("casas");
+                var qualcasa = document.getElementsByName("casas");
+                for (var i = 0; i < qualcasa.length; i++) {
+                    if (qualcasa[i].checked) {
+                        document.getElementById("minhacasa").innerHTML = qualcasa[i].value;
+                    }
+                }
+                document.getElementById("result").innerHTML = frase + '</br>';
+                for (var i = 0; i < 200; i++) {
+                    frase = frase.substring(1);
+                    i++;
+                    document.getElementById("result").innerHTML += frase + '</br>';
+                }
+            }
+            document.getElementById("btn3").onclick = function() {
+                var frase = '';
+                document.getElementById("result").innerHTML = frase;
+                frase = prompt("Digite a frase:");
+                var casaselecionada = '';
+                var qualcasa = document.getElementsByName("casas");
+                var qualcasa = document.getElementsByName("casas");
+                for (var i = 0; i < qualcasa.length; i++) {
+                    if (qualcasa[i].checked) {
+                        document.getElementById("minhacasa").innerHTML = qualcasa[i].value;
+                    }
+                }
+                var reversao;
+                for (var i = frase.length - 1; i >= 0; i--) {
+                    reversao += frase[i];
+                }
+                reversao = reversao.substring(9);
+                document.getElementById("result").innerHTML = reversao;
+            }
+            document.getElementById("btn4").onclick = function() {
+                var frase = '';
+                document.getElementById("result").innerHTML = frase;
+                frase = prompt("Digite a frase:");
+                var casaselecionada = '';
+                var qualcasa = document.getElementsByName("casas");
+                var qualcasa = document.getElementsByName("casas");
+                for (var i = 0; i < qualcasa.length; i++) {
+                    if (qualcasa[i].checked) {
+                        document.getElementById("minhacasa").innerHTML = qualcasa[i].value;
+                    }
+                }
+                var fPontos;
+                while (frase.indexOf(" ") != -1) {
+                    frase = frase.replace(" ", "");
+                }
+                for (var i = 0; i <= frase.length; i++) {
+                    fPontos += frase[i] + ".";
+                }
+                fPontos = fPontos.substring(9);
+                fPontos = fPontos.substring(0, (fPontos.length - 10));
+                document.getElementById("result").innerHTML = fPontos;
+            }
+            document.getElementById("btn5").onclick = function() {
+                var frase = '';
+                document.getElementById("result").innerHTML = frase;
+                frase = prompt("Digite a frase:");
+                var casaselecionada = '';
+                var qualcasa = document.getElementsByName("casas");
+                var qualcasa = document.getElementsByName("casas");
+                for (var i = 0; i < qualcasa.length; i++) {
+                    if (qualcasa[i].checked) {
+                        document.getElementById("minhacasa").innerHTML = qualcasa[i].value;
+                    }
+                }
+                while (frase.indexOf(" ") != -1) {
+                    frase = frase.replace(" ", "");
+                }
+                while (frase.indexOf(".") != -1) {
+                    frase = frase.replace(".", "");
+                }
+                while (frase.indexOf(",") != -1) {
+                    frase = frase.replace(",", "");
+                }
+                while (frase.indexOf("-") != -1) {
+                    frase = frase.replace("-", "");
+                }
+                while (frase.indexOf("!") != -1) {
+                    frase = frase.replace("!", "");
+                }
+                var qlt;
+                qlt = frase.length;
+                document.getElementById("result").innerHTML = qlt;
+            }
+            document.getElementById("btn6").onclick = function() {
+                var frase = '';
+                document.getElementById("result").innerHTML = frase;
+                frase = prompt("Digite a frase:");
+                var casaselecionada = '';
+                var qualcasa = document.getElementsByName("casas");
+                for (var i = 0; i < qualcasa.length; i++) {
+                    if (qualcasa[i].checked) {
+                        document.getElementById("minhacasa").innerHTML = qualcasa[i].value;
+                    }
+                }
+                var n = frase.length;
+                var nova = '';
+                for (var i = 0; i < 103; i++) {
+                    frase = frase.substring(0, (frase.length - 1));
+                    i++;
+                    document.getElementById("result").innerHTML += frase.trim() + '</br>';
+                }
+            }
+            document.getElementById("btn7").onclick = function() {
+                var frase = '';
+                document.getElementById("result").innerHTML = frase;
+                frase = prompt("Digite a frase:");
+                var casaselecionada = '';
+                var qualcasa = document.getElementsByName("casas");
+                for (var i = 0; i < qualcasa.length; i++) {
+                    if (qualcasa[i].checked) {
+                        document.getElementById("minhacasa").innerHTML = qualcasa[i].value;
+                    }
+                }
+                document.getElementById("result").innerHTML = frase.toUpperCase();
+            }
+            document.getElementById("btn8").onclick = function() {
+                var frase = '';
+                document.getElementById("result").innerHTML = frase;
+                frase = prompt("Digite a frase:");
+                var casaselecionada = '';
+                var qualcasa = document.getElementsByName("casas");
+                for (var i = 0; i < qualcasa.length; i++) {
+                    if (qualcasa[i].checked) {
+                        document.getElementById("minhacasa").innerHTML = qualcasa[i].value;
+                    }
+                }
+                frase = frase.toLowerCase()
+                var vogais = "aeiouáàéèíìóòúùãõ";
+                var consoantes = "bcdfghjklmnpqrstvxwyz";
+                total_consoantes = 0;
+                total_vogais = 0;
+
+                for (var n = 0; n < 109; n++) {
+                    if (vogais.indexOf(frase[n]) >= 0)
+                        total_vogais++;
+                    else if (consoantes.indexOf(frase[n]) >= 0)
+                        total_consoantes++;
+                }
+                document.getElementById("result").innerHTML += "V:" + total_vogais + '</br>';
+                document.getElementById("result").innerHTML += "C:" + total_consoantes + '</br>';
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Programas para os RPG's</h1>
+    </header>
+    <div id="caixa2">
+        <a href="index.html">Index |</a>
+        <a href="wiki.html">Wiki </a>
+    </div>
+    <div id="caixa">
+        <section>
+            <form>
+                <h2>Digite sua casa: </h2>
+                <div id="hog">
+                    <input type="radio" name="casas" value="❤" checked>Grifinória ❤</input>
+                    <br>
+                    <input type="radio" name="casas" value="💛">Lufa-lufa 💛</input>
+                    <br>
+                    <input type="radio" name="casas" value="💚">Sonserina 💚</input>
+                    <br>
+                    <input type="radio" name="casas" value="💙">Corvinal 💙</input>
+                </div>
+                <br>
+                <h2>Oque quer fazer ?: </h2>
+                <button type="button" id="btn1">Decompor</button>
+                <button type="button" id="btn2">Desmembrar</button>
+                <br>
+                <button type="button" id="btn6">Compor</button>
+                <button type="button" id="btn3">Inverter</button>
+                <br>
+                <button type="button" id="btn5">QLT</button>
+                <button type="button" id="btn4">Pontilhado</button>
+                <br>
+                <button type="button" id="btn7">Maiúsculo / Letras</button>
+                <button type="button" id="btn8">Vogais / Consoantes</button>
+
+                <br>
+                <div id="respostas">
+                    <br>
+                    <br>
+                    <br>
+                    <div id="minhacasa"></div>
+                    <br>
+                    <div id="result"></div>
+                    <br>
+                    <br>
+                    <div>
+            </form>
+        </section>
+    </div>
+    <figure id="imgDireita">
+        <img src="img/grifi.gif" width="300">
+    </figure>
+    <figure id="imgEsquerda">
+        <img src="img/grifi.gif" width="300">
+    </figure>
+    <footer>
+    </footer>
+</body>
+
+</html>
